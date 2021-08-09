@@ -130,7 +130,7 @@ section .title::after{
 
 /* menu btn styling */
 .menu-btn{
-    color: cyan;
+    color: #000;
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -628,7 +628,7 @@ footer span a:hover{
         width: 100%;
         left: -100%;
         top: 0;
-        background: #111;
+        background: #fff;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
