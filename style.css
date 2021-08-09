@@ -130,7 +130,7 @@ section .title::after{
 
 /* menu btn styling */
 .menu-btn{
-    color: #fff;
+    color: cyan;
     font-size: 23px;
     cursor: pointer;
     display: none;
