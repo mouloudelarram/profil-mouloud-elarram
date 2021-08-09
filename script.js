@@ -35,14 +35,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["C", "C++", "PYTHON", "PHP", "SQL", "HTML", "CSS","JAVASCRIPT"],
+        strings: ["PYTHON","JAVASCRIPT","MYSQL","PHP","SQL","HTML5","CSS3","C","C++","TWIG","SYMFONY5","BOOTSTRAP"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["La créativité","Adaptation","l'esprit d'équipe","Sérieux"],
+        strings: ["La créativité","L'adaptation","l'esprit d'équipe","L'innovation"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -70,3 +70,15 @@ $(document).ready(function(){
         }
     });
 });
+// Get the modal
+var modal = document.getElementById('id01');
+var modal2 = document.getElementById('id02');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+}
