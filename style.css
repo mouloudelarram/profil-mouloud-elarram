@@ -130,7 +130,7 @@ section .title::after{
 
 /* menu btn styling */
 .menu-btn{
-    color: #000;
+    color: #fff;
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -219,7 +219,7 @@ h2{
 
 /* about section styling */
 .about .title::after{
-    content: "à propos de moi";
+    content: "Sur moi";
 }
 .about .about-content .left{
     width: 45%;
@@ -489,7 +489,7 @@ h2{
 
 /* contact section styling */
 .contact .title::after{
-    content: "tous les médias.";
+    content: "médias.";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
