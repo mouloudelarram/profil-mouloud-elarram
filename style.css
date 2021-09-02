@@ -219,7 +219,7 @@ h2{
 
 /* about section styling */
 .about .title::after{
-    content: "Sur moi";
+    content: "à propos :";
 }
 .about .about-content .left{
     width: 45%;
