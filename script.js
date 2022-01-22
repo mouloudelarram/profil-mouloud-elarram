@@ -35,7 +35,7 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["PYTHON","JAVASCRIPT","MYSQL","PHP","SQL","HTML5","CSS3","C","C++","TWIG","SYMFONY5","BOOTSTRAP"],
+        strings: ["JavaScript (ES6)","PHP","Java","Swing/Awt java GUI","C/C++","Ajax","Html5","Css3","JSON","Python","SQL","PL/SQL","SYMFONY5","React JS","FireBase","SGBDR ORACLE","SGBDR MYSQL","GIT","NPM","MERISE","UML","BOOTSTRAP"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true

@@ -255,6 +255,10 @@ h2{
     border-radius: 6px;
     border: 2px solid cyan;
     transition: all 0.3s ease;
+    min-width: 310px;
+    max-width: 310px;
+    width: 310px;
+    text-align: center;
 }
 .about .about-content .right a:hover{
     color: cyan;
@@ -396,13 +400,13 @@ h2{
     width: 90%;
 }
 .skills-content .right .css::before{
-    width: 60%;
+    width: 70%;
 }
 .skills-content .right .js::before{
-    width: 30%;
+    width: 90%;
 }
 .skills-content .right .php::before{
-    width: 30%;
+    width: 80%;
 }
 .skills-content .right .mysql::before{
     width: 80%;
@@ -418,6 +422,18 @@ h2{
 }
 .skills-content .right .Twig::before{
     width: 40%;
+}
+.skills-content .right .java::before{
+    width: 90%;
+}
+.skills-content .right .plsql::before{
+    width: 60%;
+}
+.skills-content .right .ajax::before{
+    width: 70%;
+}
+.skills-content .right .reactjs::before{
+    width: 30%;
 }
 /* teams section styling */
 .teams .title::after{
@@ -680,6 +696,10 @@ footer span a:hover{
 }
 
 @media (max-width: 690px) {
+    .modal-content{
+        width: 100%;
+    }
+
     .max-width{
         padding: 0 23px;
     }
@@ -926,8 +946,13 @@ span.psw {
 p{
     color: black;
 }
+
+.detail{
+    padding: 20px;
+}
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
+    
   span.psw {
      display: block;
      float: none;
@@ -937,10 +962,16 @@ p{
   }
 }
 footer{
-
-    color:  cyan;
-    background-color: black;
+    color:  black;
+    background-color: #fff;
     border-radius: 100px 100px 00px 00px;
+    box-shadow: 4px 1px 20px 6px rgba(0,0,0,0.2);
 }
 
 
+@media (max-width: 690px) {
+    .modal-content{
+        width: 100%;
+        margin-top: 20%;
+    }
+}
