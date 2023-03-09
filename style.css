@@ -292,15 +292,19 @@ h2{
 .services .serv-content .card{
     width: calc(33% - 20px);
     background: -webkit-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* W3C */  
+    background:    -moz-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* FF3.6+ */
+    background:     -ms-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* IE10 */
+    background:      -o-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* Opera 11.10+ */
+    background:         linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* W3C */  
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+.services .serv-content .card p {
+    text-align: justify;
 }
 .services .serv-content .card:hover{
     background: cyan;
@@ -434,6 +438,18 @@ h2{
 }
 .skills-content .right .reactjs::before{
     width: 30%;
+}
+.skills-content .right .flutter::before{
+    width: 80%;
+}
+.skills-content .right .dart::before{
+    width: 80%;
+}
+.skills-content .right .mips::before{
+    width: 70%;
+}
+.skills-content .right .matlab::before{
+    width: 90%;
 }
 /* teams section styling */
 .teams .title::after{
@@ -748,7 +764,7 @@ footer span a:hover{
     }
 }
 .profil{ 
-
+    
     margin: 0px;
     border-radius: 50%;
 }
@@ -968,6 +984,9 @@ footer{
     box-shadow: 4px 1px 20px 6px rgba(0,0,0,0.2);
 }
 
+.text > p{
+    text-align: justify;
+}
 
 @media (max-width: 690px) {
     .modal-content{

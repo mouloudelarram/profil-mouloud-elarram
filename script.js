@@ -35,14 +35,24 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["JavaScript (ES6)","PHP","Java","Swing/Awt java GUI","C/C++","Ajax","Html5","Css3","JSON","Python","SQL","PL/SQL","SYMFONY5","React JS","FireBase","SGBDR ORACLE","SGBDR MYSQL","GIT","NPM","MERISE","UML","BOOTSTRAP"],
+        strings: ["JavaScript (ES6)","PHP","Java","Swing/Awt java GUI","C/C++","Ajax","Html5","Css3","JSON","Python","SQL","PL/SQL","SYMFONY5","React JS","FireBase","SGBDR ORACLE","SGBDR MYSQL","GIT","NPM","MERISE","UML", "OCL","BOOTSTRAP", "Matlab", "MIPS ASSEMBLEUR", ""],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["La créativité","L'adaptation","l'esprit d'équipe","L'innovation"],
+        strings: ["Communication: Clarté, efficacité, expression écrite/orale",
+                    "Travail en équipe: Collaboration, diversité, interculturel",
+                    "Résolution de problèmes: Analyse, décisions, solutions",
+                    "Planification et organisation: Priorisation, objectifs, gestion des tâches",
+                    "Leadership et gestion de projet: Direction, motivation, responsabilité",
+                    "Autonomie: Initiative, gestion, responsabilité",
+                    "Apprentissage rapide: Rapidité, technologie, compétences",
+                    "Compétences informatiques: Connaissances techniques, outils/logiciels, compétences numériques",
+                    "Gestion de pression: Gestion de temps, respect des délais, performance",
+                    "Adaptabilité: Flexibilité, changement, situations nouvelles",
+                    "La créativité","L'adaptation","l'esprit d'équipe","L'innovation"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
