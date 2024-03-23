@@ -219,7 +219,7 @@ h2{
 
 /* about section styling */
 .about .title::after{
-    content: "à propos :";
+    content: "about me :";
 }
 .about .about-content .left{
     width: 45%;
@@ -287,7 +287,7 @@ h2{
   background:      -o-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* Opera 11.10+ */
   background:         linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* W3C */  
 
-    content: "Je peut faire";
+    content: "what I do :";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -332,7 +332,7 @@ h2{
 /* skills section styling */
 
 .skills .title::after{
-    content: "J'ai étudié";
+    content: "what I know :";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -453,7 +453,7 @@ h2{
 }
 /* teams section styling */
 .teams .title::after{
-    content: "J'ai créé";
+    content: "what I did :";
 }
 
 .teams .carousel .card{
@@ -521,7 +521,7 @@ h2{
 
 /* contact section styling */
 .contact .title::after{
-    content: "médias.";
+    content: "medias :";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);

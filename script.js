@@ -1,36 +1,38 @@
-$(document).ready(function(){
-    $(window).scroll(function(){
+document.addEventListener("DOMContentLoaded", function() {
+    window.addEventListener("scroll", function() {
         // sticky navbar on scroll script
-        if(this.scrollY > 20){
-            $('.navbar').addClass("sticky");
-        }else{
-            $('.navbar').removeClass("sticky");
+        if (this.scrollY > 20) {
+            document.querySelector('.navbar').classList.add("sticky");
+        } else {
+            document.querySelector('.navbar').classList.remove("sticky");
         }
-        
+
         // scroll-up button show/hide script
-        if(this.scrollY > 500){
-            $('.scroll-up-btn').addClass("show");
-        }else{
-            $('.scroll-up-btn').removeClass("show");
+        if (this.scrollY > 500) {
+            document.querySelector('.scroll-up-btn').classList.add("show");
+        } else {
+            document.querySelector('.scroll-up-btn').classList.remove("show");
         }
     });
 
     // slide-up script
-    $('.scroll-up-btn').click(function(){
-        $('html').animate({scrollTop: 0});
+    document.querySelector('.scroll-up-btn').addEventListener("click", function() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
         // removing smooth scroll on slide-up button click
-        $('html').css("scrollBehavior", "auto");
+        document.documentElement.style.scrollBehavior = "auto";
     });
 
-    $('.navbar .menu li a').click(function(){
-        // applying again smooth scroll on menu items click
-        $('html').css("scrollBehavior", "smooth");
+    document.querySelectorAll('.navbar .menu li a').forEach(function(link) {
+        link.addEventListener("click", function() {
+            // applying smooth scroll again on menu items click
+            document.documentElement.style.scrollBehavior = "smooth";
+        });
     });
 
     // toggle menu/navbar script
-    $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active");
-        $('.menu-btn i').toggleClass("active");
+    document.querySelector('.menu-btn').addEventListener("click", function() {
+        document.querySelector('.navbar .menu').classList.toggle("active");
+        document.querySelector('.menu-btn i').classList.toggle("active");
     });
 
     // typing text animation script
@@ -41,18 +43,18 @@ $(document).ready(function(){
         loop: true
     });
 
-    var typed = new Typed(".typing-2", {
-        strings: ["Communication: Clarté, efficacité, expression écrite/orale",
-                    "Travail en équipe: Collaboration, diversité, interculturel",
-                    "Résolution de problèmes: Analyse, décisions, solutions",
-                    "Planification et organisation: Priorisation, objectifs, gestion des tâches",
-                    "Leadership et gestion de projet: Direction, motivation, responsabilité",
-                    "Autonomie: Initiative, gestion, responsabilité",
-                    "Apprentissage rapide: Rapidité, technologie, compétences",
-                    "Compétences informatiques: Connaissances techniques, outils/logiciels, compétences numériques",
-                    "Gestion de pression: Gestion de temps, respect des délais, performance",
-                    "Adaptabilité: Flexibilité, changement, situations nouvelles",
-                    "La créativité","L'adaptation","l'esprit d'équipe","L'innovation"],
+    var typed2 = new Typed(".typing-2", {
+        strings: ["Communication: Clarity, efficiency, written/oral expression",
+                    "Teamwork: Collaboration, diversity, intercultural",
+                    "Problem solving: Analysis, decisions, solutions",
+                    "Planning and organization: Prioritization, objectives, task management",
+                    "Leadership and project management: Direction, motivation, responsibility",
+                    "Autonomy: Initiative, management, responsibility",
+                    "Quick learning: Speed, technology, skills",
+                    "Computer skills: Technical knowledge, tools/software, digital skills",
+                    "Pressure management: Time management, meeting deadlines, performance",
+                    "Adaptability: Flexibility, change, new situations",
+                    "Creativity","Adaptation","Team spirit","Innovation"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -79,16 +81,18 @@ $(document).ready(function(){
             }
         }
     });
+
+    // Get the modal
+    var modal = document.getElementById('id01');
+    var modal2 = document.getElementById('id02');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        if (event.target == modal2) {
+            modal2.style.display = "none";
+        }
+    }
 });
-// Get the modal
-var modal = document.getElementById('id01');
-var modal2 = document.getElementById('id02');
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-    if (event.target == modal2) {
-        modal2.style.display = "none";
-    }
-}
